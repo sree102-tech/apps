@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Loading Icon Example</title>
+    <style>
+        body {
+            max-width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        .ss{
+           justify-content: center; 
+        }
+
+        h7{
+            color: #F53642;
+        }
+
+     
+    </style>
+</head>
+<body>
+
+<!-- Loading Icon -->
+<div id="loading-icon">
+    <img src="IMG_0257 (1).PNG" alt="Loading">
+</div>
+<div class="ss">
+    <h7>Loading.....</h7>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    // Simulate a delay (in milliseconds) before redirecting to the next page
+    const delay = 2000; // Adjust the delay as needed
+
+    $(document).ready(function () {
+        setTimeout(function () {
+            // Redirect to the next page (replace 'nextPage.html' with your actual page URL)
+            window.location.href = 'login.html';
+        }, delay);
+    });
+</script>
+
+</body>
+</html>

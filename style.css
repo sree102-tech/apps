@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Set background color as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Set a high z-index to ensure it's on top */
+  }
+  
+  .logo {
+    width: 100px; /* Adjust the size of your logo */
+    height: 100px;
+    background: url('WhatsApp Image 2023-12-29 at 7.17.02 AM.jpeg') center/cover no-repeat; /* Replace with your logo path */
+    animation: rotateAndScale 2s linear infinite paused; /* Adjust animation duration as needed */
+    
+
+  }
+  
+  @keyframes rotateAndScale {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50%{
+      transform: rotate(360deg) scale(1.5);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+      }
+  }
+  .preloader .active .logo{
+    animation-play-state: running;
+  }
